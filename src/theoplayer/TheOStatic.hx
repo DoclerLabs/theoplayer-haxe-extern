@@ -2,6 +2,9 @@ package theoplayer;
 
 import haxe.extern.EitherType;
 
+/**
+ * Class representing the Global theoplayer variable.
+ */
 extern class TheOStatic {
 
   /**
