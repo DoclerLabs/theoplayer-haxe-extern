@@ -1,0 +1,9 @@
+{
+  "name": "theoplayer-extern",
+  "url" : "",
+  "description": "Extern classes for the TheoPlayer",
+  "version": "1.0.0",
+  "dependencies": {
+    "hexunit": "https://github.com/DoclerLabs/hexUnit"
+  }
+}

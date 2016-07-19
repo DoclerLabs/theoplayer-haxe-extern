@@ -1,0 +1,18 @@
+{
+    "js": {
+        "path": {
+            "dist": "dist/js",
+            "resource": "resource/js"
+        },
+        "artifact": "main.js",
+        "hxml": "build-js.hxml",
+        "testHxml": "build-js-test.hxml"
+    },
+    "path": {
+        "dist": "dist",
+        "testTemp": "testTmp",
+        "src": "src",
+        "test": "test",
+        "haxelib": ".haxelib"
+    }
+}
