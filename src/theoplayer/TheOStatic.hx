@@ -3,7 +3,7 @@ package theoplayer;
 import haxe.extern.EitherType;
 
 /**
- * Class representing the Global theoplayer variable.
+ * Class representing the global theoplayer variable.
  */
 extern class TheOStatic {
 
@@ -17,12 +17,6 @@ extern class TheOStatic {
    * loaded and auto-detected players have been created.
    */
   public var onReady: Dynamic;
-
-  /**
-   * Fires when THEOplayer has been loaded and auto-detected players
-   * have been created.
-   */
-  public var ready: Dynamic;
 
   /**
    * Returns the player linked to the given identifier. Identifier can be either

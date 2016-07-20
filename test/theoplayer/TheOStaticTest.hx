@@ -27,6 +27,7 @@ class TheOStaticTest
    public function hasEveryMethodAndProperty() : Void
    {
      Assert.isNotNull(this.theoGlobal.configuration, "theoplayer.configuration should not be null");
+     Assert.isNotNull(this.theoGlobal.onReady, "theoplayer.onReady should not be null");
      Assert.isNotNull(this.theoGlobal.addEventListener, "theoplayer.addEventListener should not be null");
      Assert.isNotNull(this.theoGlobal.controller, "theoplayer.controller should not be null");
      Assert.isNotNull(this.theoGlobal.destroy, "theoplayer.destroy should not be null");
