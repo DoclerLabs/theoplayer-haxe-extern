@@ -29,7 +29,7 @@ extern class TheOStatic {
    * a sequence number, an HTML-id given to the <video>-tag to which the player
    * was attached or the player instance itself.
    */
-  public function player(identifier: EitherType<String, Player>) : Player;
+  public function player(identifier: Dynamic) : Player;
 
   /**
    * Returns the appropriate controller for the player identifier

@@ -13,7 +13,7 @@ extern class Player {
   * to the entire size of the video-element, "original" means the video can be
   * letter boxed and will maintain the original aspect ratio.
   */
-  public var aspectRation: Dynamic;
+  public var aspectRatio: Dynamic;
 
  /**
   * Returns an object that can be used to list and change the audio tracks
@@ -25,7 +25,7 @@ extern class Player {
   * Sets or returns if the video should automatically start playing on
   * platforms which offer support for this.
   */
-  public var autoPlay: Bool;
+  public var autoplay: Bool;
 
  /**
   * Returns a TimeRanges object containing the ranges of the media that have
@@ -227,89 +227,6 @@ extern class Player {
   * Width can be set using % or auto as well.
   */
   public var width: Int;
-
-  /* Player API Events */
-
- /**
-  * Fires when the player can start playing.
-  */
-  public var canPlay: Dynamic;
-
- /**
-  * Fires when the player can probably play through the video
-  * without stopping for buffering.
-  */
-  public var canplaythrough: Dynamic;
-
- /**
-  * Fires when the duration of the video changed.
-  */
-  public var durationchange: Dynamic;
-
- /**
-  * Fires when the player enters or exits full screen mode.
-  */
-  public var fullscreenchange: Dynamic;
-
- /**
-  * Fires when the player has loaded the media data for
-  * the first frame of the video.
-  */
-  public var loadeddata: Dynamic;
-
- /**
-  * Fires when the player has loaded meta data (manifest) for the video.
-  */
-  public var loadedmetadata: Dynamic;
-
- /**
-  * Fires when the player starts downloading the video data.
-  */
-  public var loadstart: Dynamic;
-
- /**
-  * Fires when the player detects all of the potential
-  * streaming sources are offline.
-  */
-  public var offline: Dynamic;
-
- /**
-  * Fires when the video is ready to play after having been
-  * paused or stopped for buffering.
-  */
-  public var playing: Dynamic;
-
- /**
-  * Fires when the user is finished moving/skipping to a
-  * new position in the video.
-  */
-  public var seeked: Dynamic;
-
- /**
-  * Fires when the browser is trying to get media data,
-  * but data is not available.
-  */
-  public var stalled: Dynamic;
-
- /**
-  * Fires when the current playback position has changed.
-  */
-  public var timeupdate: Dynamic;
-
- /**
-  * Fires when the player could not be loaded on the current browser platform.
-  */
-  public var unsupportedPlatform: Dynamic;
-
- /**
-  * Fires when the volume has been changed.
-  */
-  public var volumechange: Dynamic;
-
- /**
-  * Fires when the video stops because it needs to buffer the next frame.
-  */
-  public var waiting: Dynamic;
 
   /* Player Methods */
 
