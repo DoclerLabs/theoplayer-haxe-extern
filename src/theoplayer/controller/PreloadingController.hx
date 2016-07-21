@@ -17,7 +17,7 @@ extern class PreloadingController {
   * attach. Passing just a source URL string or an array of source URLs has
   * the same effect as passing an options object with only the src property set.
   */
-  public function schedule(s): Void;
+  public function schedule(s: Dynamic): PreloadItem;
 
  /**
   * Removes a PreloadItem from the preload schedule.
