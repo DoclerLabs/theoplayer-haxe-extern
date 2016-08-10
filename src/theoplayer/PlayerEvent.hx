@@ -3,7 +3,7 @@ package theoplayer;
 /**
  * API events for the Player.
  */
-public class PlayerEvent {
+class PlayerEvent {
 
    /**
     * Fires when the player can start playing.
@@ -21,11 +21,27 @@ public class PlayerEvent {
     */
     public static var Durationchange = "durationchange";
 
+	/**
+	 * Fires when the current video ended.
+	 */
+	public static var Ended = "ended";
+	
+	/**
+	 * Fires when an error occurred during the loading or playback
+	 */
+	public static var Error = "error";
+	
    /**
     * Fires when the player enters or exits full screen mode.
     */
     public static var FullscreenChange = "fullscreenchange";
 
+	/**
+	 * Fires when the player has been initialized. When the player
+	 * has not yet initialized, certain functionality might not be available.
+	 */
+	public static var Initialized = "initialized";
+	
    /**
     * Fires when the player has loaded the media data for
     * the first frame of the video.
@@ -48,6 +64,17 @@ public class PlayerEvent {
     */
     public static var Offline = "offline";
 
+	/**
+	 * Fires when the player detects a streaming source 
+	 * comes online after being offline.
+	 */
+	public static var Online = "online";
+	
+	/**
+	 * Fires when the video has been paused.
+	 */
+	public static var Pause = "pause";
+	
    /**
     * Fires when the video is ready to play after having been
     * paused or stopped for buffering.
@@ -60,6 +87,11 @@ public class PlayerEvent {
     */
     public static var Seeked = "seeked";
 
+	/**
+	 * Fires when the user is moving/skipping to a new position in the video.
+	 */
+	public static var Seeking = "seeking";
+	
    /**
     * Fires when the browser is trying to get media data,
     * but data is not available.
